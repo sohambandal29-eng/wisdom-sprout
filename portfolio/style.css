@@ -1,0 +1,99 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      box-sizing: border-box;
+}
+body{
+    background-color: rgb(6, 0, 12);
+    color:orange
+}
+header{
+    height:400px;
+}
+.headercontent{
+    width:50%;
+    height:300px;
+    
+    border:20px;
+    float:left;
+}
+.userimg{
+    width:50%;
+    float:right;
+}
+.userimg img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+}
+.btn{
+width:300px;
+padding:20px 10px;border:none;
+background-color: chocolate;
+border-radius: 20px;
+color:white;
+}
+.btn:hover{
+background-color: rgb(125, 52, 0);
+}
+ header h1{
+    color:rgb(160, 5, 5);
+    text-align:center;
+    font-size:50px;
+    text-shadow:2px 2px 5px white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+   width:70%;
+   font: size 20px;
+   line-height:1.8;
+}
+table,td,th{
+    border:1px solid white;
+    border-collapse:collapse;
+    margin:30px auto;
+}
+th{
+background-color:gray;
+
+}
+th,td{
+padding:10px;
+}
+td{
+
+}
+tr:nth-child(odd){
+    background-color: rgb(78, 0, 0);
+}
+.heading1{
+    text-align: center;
+    font-size:2.2rem;
+    text-decoration: underline;
+}
+#quali{
+    background-color: grey;
+    padding-top: 30px;
+    padding-bottom: 3opx;
+}
+.techskilldiv{
+    width:80%; 
+    margin:30px auto;
+    background-color: cadetblue;
+    text-align: center;
+}
+.lefttechskill{
+    width:50%;
+    background-color: blueviolet;
+    float:left;
+    
+}
+.righttechskill{
+    width:50%;
+    background-color: rgb(251, 0, 0);
+    float:right;
+}
+.height180{
+    height:180px;
+    margin:20px auto;
+
+}
