@@ -1,0 +1,50 @@
+*{
+    color: aliceblue;
+}
+.vertical-line {
+    border-left: 2px solid black;
+    height: 30px;
+}
+.navbar{
+    background-color: rgb(46, 42, 42);
+    padding: 10px;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.leftSectionNavbar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.rightSectionNavbar{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileImage{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.profileHeading{
+    font-size: 15px;
+    font-family: roboto;
+    font-weight: 400;
+}
+.profileDescription{
+    font-size: 10px;
+    font-family: roboto;
+    font-weight: 100;
+}
+.profileBtn{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(46, 42, 42);
+    border-radius: 20px;
+    padding: 10px;
+}
