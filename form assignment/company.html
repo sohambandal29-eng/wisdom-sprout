@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./company.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <hr>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="type" checked>
+                <span>Personal</span>
+            </label>
+            <label>
+                <input type="radio" name="type">
+                <span>Company</span>
+            </label>
+        </div>
+        <hr>
+        <div class="input-group">
+            <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="input-group">
+            <div class="icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="gender-group">
+            <label>
+                <input type="radio" name="gender" checked>
+                <span>Male</span>
+            </label>
+            <label>
+                <input type="radio" name="gender">
+                <span>Female</span>
+            </label>
+        </div>
+        <div class="footer">
+            <p>
+                By clicking Register, you agree on our
+                <a href="#">terms and condition</a>.
+            </p>
+            <button type="button">Register</button>
+        </div>
+    </div>
+</body>
+</html>

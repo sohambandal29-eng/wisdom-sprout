@@ -1,0 +1,93 @@
+.bg-container{
+    display: flex;
+    color: white;
+}
+.left-section{
+    width: 50%;
+    background-color: #000000;
+}
+.heading-wrap{
+    padding: 20px;
+}
+.special-word{
+    color: rgb(234, 72, 28);
+}
+.instagramLogo{
+    height: 150px;
+    width: 150px;
+}
+.left-section-heading{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.reel-image-section{
+    display: flex;
+    justify-content: center;
+}
+.instagramFeedImage{
+    height: 250px;
+    width: 300px;
+}
+.right-section{
+    width: 50%;
+    background-color: #18262c;
+    padding-left: 50px;
+}
+.right-container{}
+.formHeading{
+    margin-top: 130px;
+    
+}
+.userName{
+    display: block;
+    border: none;
+    padding: 17px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border:  1.0px solid rgb(125, 112, 112);
+    background-color: transparent;
+}
+.password{
+    display: block;
+    border:  1.0px solid rgb(125, 112, 112);
+    padding: 17px;
+    width: 80%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    
+}
+.loginBtn{
+    padding: 17px;
+    width: 90%;
+    margin-bottom: 1px;
+    color: aliceblue;
+    border-radius: 25px;
+    background-color: rgb(33, 125, 175);
+}
+.forgotPassword{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.loginfacebookBtn{
+    display: block;
+    padding: 17px;
+    width: 90%;
+    margin-bottom: 20px;
+    color: aliceblue;
+    border-radius: 25px;
+    background-color: transparent;
+    border:  1.0px solid rgb(125, 112, 112);
+}
+.createAc{
+    display: block;
+    padding: 17px;
+    width: 90%;
+    margin-bottom: 20px;
+    color: aliceblue;
+    border-radius: 25px;
+    background-color: transparent;
+    border:  1.0px solid rgb(125, 112, 112);
+}

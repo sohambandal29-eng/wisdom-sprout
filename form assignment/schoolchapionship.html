@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Championship Registration</title>
+    
+    <link rel="stylesheet" href="./schoolchampionship.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Championship Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label>School name:<span>*</span></label>
+                <input type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Schooler name:<span>*</span></label>
+                <div class="name-row">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Parent name:<span>*</span></label>
+                <div class="name-row">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Parent phone:<span>*</span></label>
+                <input type="tel" placeholder="### ### ####" required>
+            </div>
+            <div class="form-group">
+                <label>Parent email:<span>*</span></label>
+                <input type="email" required>
+            </div>
+            <div class="form-group">
+                <label>Preferred sport:<span>*</span></label>
+                <select required>
+                    <option value=""></option>
+                    <option>Cricket</option>
+                    <option>Football</option>
+                    <option>Basketball</option>
+                    <option>Badminton</option>
+                    <option>Volleyball</option>
+                    <option>Athletics</option>
+                </select>
+            </div>
+            <div class="verification">
+                <label>Verification<span>*</span></label>
+                <div class="captcha">
+                    <input type="checkbox" required>
+                    <span>I'm not a robot</span>
+                    <div class="captcha-icon">🔄</div>
+                </div>
+            </div>
+            <button type="submit"><i class="fa-solid fa-arrow-right-long"></i>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

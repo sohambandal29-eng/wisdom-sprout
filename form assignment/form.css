@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Times New Roman", serif;
+}
+
+.container {
+    width: 95%;
+    margin: 5px auto;
+    border: 6px solid #aaaaaa;
+    padding: 30px 12%;
+}
+
+h1 {
+    font-size: 56px;
+    margin-top: 10px;
+    margin-bottom: 65px;
+}
+
+label {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.login {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.login p {
+    font-size: 28px;
+}
+
+.login a {
+    color: blue;
+}
