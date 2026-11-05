@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.gallery {
+    width: 380px;
+    height: 320px;
+    background-color: #d6b400;
+    position: relative;
+    overflow: hidden;
+}
+.animal {
+    width: 140px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    border: 5px solid #d6b400;
+}
+.animal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wolf {
+    top: 5px;
+    left: 20px;
+}
+.tiger {
+    top: 5px;
+    right: 10px;
+}
+.lion {
+    width: 145px;
+    height: 140px;
+    top: 90px;
+    left: 115px;
+    z-index: 2;
+}
+Bottom left */
+.dog {
+    bottom: 5px;
+    left: 20px;
+}
+.bear {
+    bottom: 5px;
+    right: 10px;
+}
