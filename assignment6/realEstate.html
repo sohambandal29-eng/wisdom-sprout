@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamprise| Find Your Dream Home</title>
+    <link rel="stylesheet" href="realEstate.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Dream<span>prise.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-btn">Contact Us</a>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">FIND YOUR PERFECT PLACE</p>
+            <h1>Discover A Place<br>You'll Love To Call <span>Home.</span></h1>
+            <p class="hero-text">
+                Find your dream property with our exclusive collection
+                of beautiful homes and apartments.
+            </p>
+        </div>
+        <div class="search-box">
+            <div class="search-field">
+                <label>Location</label>
+                <input type="text" id="location" placeholder="Enter location">
+            </div>
+
+            <div class="search-field">
+                <label>Property Type</label>
+                <select id="type">
+                    <option value="all">All Properties</option>
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                </select>
+            </div>
+
+            <div class="search-field">
+                <label>Maximum Price</label>
+                <select id="price">
+                    <option value="all">Any Price</option>
+                    <option value="5000000">₹50 Lakh</option>
+                    <option value="10000000">₹1 Crore</option>
+                    <option value="20000000">₹2 Crore</option>
+                </select>
+            </div>
+
+            <button class="search-btn" onclick="searchProperties()">
+                Search Property
+            </button>
+        </div>
+    </section>
+    <section class="section" id="properties">
+        <div class="section-heading">
+            <p>OUR PROPERTIES</p>
+            <h2>Explore Our Properties</h2>
+            <span>Discover the perfect property for your lifestyle.</span>
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+
+            <div class="property-card" data-location="pune" data-type="Villa" data-price="8500000">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700" alt="Modern villa">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Modern Luxury Villa</h3>
+                    <p>📍 Baner, Pune</p>
+                    <h3 class="price">₹85,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 4 Beds</span>
+                        <span>🛁 3 Baths</span>
+                        <span>📐 2400 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-location="mumbai" data-type="Apartment" data-price="6500000">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700" alt="Modern apartment">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Premium Apartment</h3>
+                    <p>📍 Andheri, Mumbai</p>
+                    <h3 class="price">₹65,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 3 Beds</span>
+                        <span>🛁 2 Baths</span>
+                        <span>📐 1500 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-location="nagpur" data-type="House" data-price="4500000">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=700" alt="Beautiful house">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Beautiful Family House</h3>
+                    <p>📍 Dharampeth, Nagpur</p>
+                    <h3 class="price">₹45,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 3 Beds</span>
+                        <span>🛁 2 Baths</span>
+                        <span>📐 1800 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-location="nashik" data-type="Villa" data-price="12000000">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700" alt="Luxury home">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Elegant Luxury Home</h3>
+                    <p>📍 Nashik, Maharashtra</p>
+                    <h3 class="price">₹1,20,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 5 Beds</span>
+                        <span>🛁 4 Baths</span>
+                        <span>📐 3000 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-location="pune" data-type="Apartment" data-price="3500000">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=700" alt="Apartment interior">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Modern City Apartment</h3>
+                    <p>📍 Hinjewadi, Pune</p>
+                    <h3 class="price">₹35,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 2 Beds</span>
+                        <span>🛁 2 Baths</span>
+                        <span>📐 1100 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-location="wardha" data-type="House" data-price="2800000">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700" alt="Family home">
+                <div class="property-info">
+                    <span class="property-label">For Sale</span>
+                    <h3>Peaceful Family Home</h3>
+                    <p>📍 Wardha, Maharashtra</p>
+                    <h3 class="price">₹28,00,000</h3>
+                    <div class="property-meta">
+                        <span>🛏 2 Beds</span>
+                        <span>🛁 2 Baths</span>
+                        <span>📐 1200 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="details-btn">View Details</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No properties found. Try another search.
+        </p>
+    </section>
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900" alt="Beautiful home interior">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">ABOUT DREAMESTATE</p>
+            <h2>We Help You Find Your Perfect Home</h2>
+            <p>
+                DreamEstate is dedicated to helping people discover
+                beautiful properties. We make finding and buying your
+                dream home simple and comfortable.
+            </p>
+
+            <div class="about-stats">
+                <div><h3>500+</h3><p>Properties</p></div>
+                <div><h3>300+</h3><p>Happy Clients</p></div>
+                <div><h3>10+</h3><p>Years Experience</p></div>
+            </div>
+
+            <a href="#contact" class="primary-btn">Contact Our Team</a>
+        </div>
+    </section>
+    <section class="why-section">
+        <div class="section-heading">
+            <p>OUR ADVANTAGES</p>
+            <h2>Why Choose DreamEstate?</h2>
+            <span>We make your property journey easier.</span>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">⌂</div>
+                <h3>Best Properties</h3>
+                <p>Explore a collection of quality homes in great locations.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">✓</div>
+                <h3>Trusted Service</h3>
+                <p>Get support throughout your property search journey.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">₹</div>
+                <h3>Affordable Prices</h3>
+                <p>Find suitable property options for your budget.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">♡</div>
+                <h3>Customer Support</h3>
+                <p>Our team is ready to help with your property enquiries.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="featured">
+        <div class="section-heading">
+            <p>HANDPICKED FOR YOU</p>
+            <h2>Featured Properties</h2>
+            <span>Take a look at some of our popular properties.</span>
+        </div>
+
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700" alt="Luxury house">
+                <div>
+                    <h3>Luxury Modern House</h3>
+                    <p>Pune, Maharashtra</p>
+                    <strong>₹95,00,000</strong>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=700" alt="Modern property">
+                <div>
+                    <h3>Elegant Modern Home</h3>
+                    <p>Mumbai, Maharashtra</p>
+                    <strong>₹75,00,000</strong>
+                </div>
+            </div>
+
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700" alt="Contemporary villa">
+                <div>
+                    <h3>Contemporary Villa</h3>
+                    <p>Nagpur, Maharashtra</p>
+                    <strong>₹80,00,000</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="section-heading">
+            <p>CLIENT REVIEWS</p>
+            <h2>What Our Clients Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The team helped us find a beautiful home. The entire process was simple."</p>
+                <h3>Rahul Sharma</h3>
+                <span>Happy Customer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Excellent service and a wonderful property collection. Highly recommended."</p>
+                <h3>Priya Patel</h3>
+                <span>Happy Customer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"I found the right apartment within my budget. Great experience."</p>
+                <h3>Amit Verma</h3>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section section" id="contact">
+        <div class="contact-info">
+            <p class="tagline">GET IN TOUCH</p>
+            <h2>Let's Find Your Dream Property</h2>
+            <p>Have questions? Send us an enquiry and our team will contact you.</p>
+            <p>📍 Maharashtra, India</p>
+            <p>📞 +91 7843015488</p>
+            <p>✉adi@dreamestate.com</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <h3>Send An Enquiry</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Property Type</option>
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+            </select>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="primary-btn">Submit Enquiry</button>
+            <p id="formMessage" aria-live="polite"></p>
+        </form>
+    </section>
+
+
+    <footer>
+        <div>
+            <p>&copy; 2026 DreamEstate. All rights reserved.</p>
+        </div>
